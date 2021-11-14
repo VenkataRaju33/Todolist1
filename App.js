@@ -6,7 +6,7 @@ import * as SQLite from "expo-sqlite";
 
 function openDatabase() {
   if (Platform.OS === "web") {
-    console.log("hi");
+    
     return {
       transaction: () => {
         return {
@@ -46,7 +46,7 @@ React.useEffect(() => {
 }, []);
 console.log(taskItems,"taskIems");
 const add = () => {
-  console.log("add")
+  
   
 
   db.transaction(
